@@ -1,5 +1,7 @@
 #  Assignment-3 Singly linked list
 
+# Singly linked list work only forward (accending oder) direction, if we want to back so we will start , start node.
+
 # Define a class Node to describe a node of a Singly Linked List
 
 class Node:
