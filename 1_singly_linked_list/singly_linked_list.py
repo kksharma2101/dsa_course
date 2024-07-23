@@ -91,6 +91,7 @@ class SLL:
                         temp.next = temp.next.next
                         break
                     temp = temp.next
+                    
     def __iter__(self):
         return SLLIterator(self.start)
                         
