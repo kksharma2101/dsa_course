@@ -74,7 +74,7 @@ class CLL:
         if not self.is_empty():
             temp = self.tail.next
             while temp != self.tail:
-                print(temp.item)       
+                print(temp.item, end=" ")       
                 temp = temp.next
             print(temp.item)
 
@@ -98,13 +98,68 @@ class CLL:
                 temp.next = self.tail.next
                 self.tail=temp
 
+# 11. Define a method delete_item() to specified element from the list.
+    def delete_item(self,data):
+        if not self.is_empty():
+            if self.tail.next == self.tail:
+                if self.tail.item == data:
+                    self.tail = None
+            else:
+                if self.tail.next.item == data:
+                    self.delete_first()
+                else:
+                    temp = self.tail.next
+                    while temp != self.tail:
+                        if temp.next == self.tail:
+                            if self.tail.item == data:
+                                self.delete_last()
+                            break
+                        if temp.next.item == data:
+                            temp.next == temp.next.next
+                            break
+                        temp=temp.next
+                        
+    def __iter__(self):
+        if self.tail == None:
+            return CLLIterator(None)
+        else:
+            return CLLIterator(self.tail.next)
+
+# 12. Implement iterator for CLL to access all the elements of the list in a sequence.
+class CLLIterator():
+    def __init__(self, start):
+        self.current = start
+        self.start = start
+        self.count = 0
+        
+    def __iter__(self):
+        return self
+    
+    def __next__(self):
+        if self.current == None:
+            raise StopIteration
+        if self.current == self.start and self.count == 1:
+            raise StopIteration
+        else:
+            self.count = 1
+        data = self.current.item
+        self.current = self.current.next
+        
+        return data
+    
+
 
 obj = CLL()
 obj.insert_at_start(21)
 obj.insert_at_start(201)
+obj.insert_at_start(301)
+obj.insert_at_last(11)
 obj.insert_at_last(2011)
-obj.insert_after(obj.search(21),40)
+obj.insert_after(obj.search(201),50)
 # obj.delete_first()
-obj.delete_last()
+# obj.delete_last()
+obj.delete_item(11)
 obj.print_all()
+for temp in obj:
+    print(temp, end=' ')
 # 201, 21, 40, 2011
