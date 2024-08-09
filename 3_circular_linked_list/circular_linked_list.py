@@ -25,7 +25,7 @@ class CLL:
             n.next = self.tail.next
             self.tail.next = n
         
-# 5. Define a method insert_at_last() to insert an element at the end of the list
+# 5. Define a method insert_at_last() to insert an element at the end of the list.
     def insert_at_last(self, data):
         n=Node(data)
         if self.is_empty():
