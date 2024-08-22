@@ -12,7 +12,7 @@ class Node:
 # Define a class SLLL to implement Singly linked list with __init__() method to create and initialise start reference variable
 
 class SLL:
-    def __init__(self, start):
+    def __init__(self, start=None):
         self.start = start
 
 # Define a method is_empty() to checked if the linked list is empty in SLL class.
@@ -108,19 +108,21 @@ class SLLIterator():
         self.current = self.current.next
         return data
 
-result = SLL(start=None)
-
-result.insert_at_start(10)
-result.insert_at_start(30)
-result.insert_at_start(50)
-result.insert_at_last(20)
-result.insert_after(result.search(30),40)
-# result.delete_first()
-# result.delete_last()
+# driver code
+# """
+# result = SLL(start=None)
+# result.insert_at_start(10)
+# result.insert_at_start(30)
+# result.insert_at_start(50)
+# result.insert_at_last(20)
+# result.insert_after(result.search(30),40)
+# # result.delete_first()
+# # result.delete_last()
+# # result.print_all()
 # result.print_all()
-result.print_all()
-result.delete_item(30)
-print(" ")
-# print(result.print_all());
-for x in result:
-    print(x)
+# result.delete_item(30)
+# print(" ")
+# # print(result.print_all());
+# for x in result:
+#     print(x)
+# """
