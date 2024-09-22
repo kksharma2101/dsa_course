@@ -1,4 +1,4 @@
-#  ===== Assignment-3 Stack extending List =====
+#  ===== Assignment-8 Stack extending List =====
 
 # 1. Define a class stack to implement stack data structure by extending list class.
 from typing import SupportsIndex

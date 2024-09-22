@@ -1,4 +1,4 @@
-#  ===== Assignment-3 Stack using List =====
+#  ===== Assignment-7 Stack using List =====
 
 # Stack is a linear data structure.
 # this is working on principle is Last in First Out(LIFO)
