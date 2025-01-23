@@ -1,8 +1,8 @@
 #  ===== Assignment-10 Stack using linked List (Stack implementation using Sll class) =====
 
 # 1. Import module containing singly linked list code in your python file.
-# from singly_linked_list import * # Import module again *****
 
+from Assign_1 import *
 
 # 2. Define a class Stack to implement stack data structure using linked list concept. Define __init__() method to create Singly Linked List (Sll) object.
 class Stack:
