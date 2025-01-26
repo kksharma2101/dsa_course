@@ -33,7 +33,7 @@ class Queue:
 # 6. In Queue class, define get_rear() method to return rear element from the queue.
     def get_rear(self):
         if not self.is_empty():
-            return self.mylist[len(self.mylist)-1]
+            return self.mylist[-1]
         else:
             return None
 
