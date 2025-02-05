@@ -1,4 +1,5 @@
 #  ===== Assignment-14 Deque Implimentation Using List =====
+
 # Note - Variations of Queue
 # 1 - Insertion restricted
 # In this case we insert value only rear side but delete both of the side front and rear
@@ -55,5 +56,5 @@ deObj.insert_rear(201)
 deObj.insert_front(34)
 deObj.get_front()
 deObj.get_rear()
-deObj.delete_rear()
+deObj.delete_rear() 
 print(deObj.size())
