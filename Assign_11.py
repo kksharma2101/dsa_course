@@ -13,6 +13,7 @@ class Queue():
         self.item_count = 0
 
 # 2. Define a method is_empty() to check if the Queue is empty in Queue class.
+
     def is_empty(self):
         return self.front == 0
 
