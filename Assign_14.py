@@ -11,7 +11,7 @@ class PriorityQueue:
 
 # 2. Define is_empty methon in priorityQueue class to check if the priorityQueue is empty.
     def is_empty(self):
-        return len(self.items) == None
+        return len(self.items) == 0
 
 # 3. Define a push method in PriorityQueue class to insert new data with given priority.
     def push(self, priority, data):
@@ -37,7 +37,7 @@ pri.push(6, "kamal")
 pri.push(5, "sharma")
 pri.push(3, "Ganesh")
 pri.push(4, "Hari")
-# print(pri.size())
 
 while not pri.is_empty():
     print(pri.pop())
+print(pri.size())
